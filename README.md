@@ -1,12 +1,4 @@
 # bootstrap-isolated
-```
-npm init
-npm install sass -g
-npm install replace --save-dev
-npm install bootstrap --save-dev
-sass bs4.scss bs4.css
-node index.js
-```
 
 ```
 git init
