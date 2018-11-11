@@ -1,5 +1,5 @@
 # bootstrap-isolated
-Use /dist/css/bs4.css
+Use /dist/css/bs4.min.css
 
 ```
 git init
