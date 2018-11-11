@@ -11,3 +11,11 @@ git commit -m "first commit"
 git remote add origin https://github.com/yigith/bootstrap-isolated.git
 git push -u origin master
 ```
+
+```
+mkdir bootstrap-isolated
+cd bootstrap-isolated
+git init
+git remote add origin -f https://github.com/yigith/bootstrap-isolated.git
+git pull origin master
+```
