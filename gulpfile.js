@@ -5,6 +5,7 @@ sass.compiler = require('node-sass');
 const minify = require('gulp-minify');
 var replace = require('gulp-replace');
 const rename = require('gulp-rename');
+const autoprefixer = require('gulp-autoprefixer');
 
 function copyBootstrapDist() {
 	return src('node_modules/bootstrap/dist/**/*')
@@ -16,6 +17,7 @@ function sassBootstrapIsolated() {
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 	.pipe(replace('.bs4 html', '.bs4'))
 	.pipe(replace('.bs4 body', '.bs4'))
+	.pipe(autoprefixer())
 	.pipe(rename('bs4.min.css'))
     .pipe(dest('./dist/css'));
 }
