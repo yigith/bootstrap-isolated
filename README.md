@@ -1,4 +1,5 @@
 # bootstrap-isolated
+Use /dist/css/bs4.css
 
 ```
 git init
